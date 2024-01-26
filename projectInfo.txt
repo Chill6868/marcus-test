@@ -1,0 +1,4 @@
+Font: Open Sans
+Font weight: 400 (regular), 600 (bold)
+
+TO DO:

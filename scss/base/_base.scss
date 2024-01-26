@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: $text-color;
+	background-color: $bg-color;
+}
+
+//==============
+// MISC
+//==============
+
+// ****************************WRAPPER****************************
+
+.wrapper {
+	border: 1px solid red;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+	.wrapper {
+		width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.wrapper {
+		width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.wrapper {
+		width: 1140px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.wrapper {
+		width: 1320px;
+	}
+}
+
+// ****************************OTHER******************************
+
+.nav-bar-active {
+	overflow: hidden;
+}
+
+.horizontal-line {
+	height: 5px;
+	width: 20%;
+	margin-bottom: 0.5em;
+	background: $main-gradient;
+	border-radius: 6px;
+}

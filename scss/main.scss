@@ -1,0 +1,15 @@
+// 1. Base
+@use "./base/" as *;
+
+// 2. Abstracts
+@use "./abstracts/" as *;
+
+// 3. Components
+@use "./components/" as *;
+
+// 4. Layout
+@use "./layout/" as *;
+
+// 5. Pages or sections (depends on website)
+// @use "./pages/" as *;
+@use "./sections/" as *;
