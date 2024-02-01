@@ -4,6 +4,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	color: $text-color;
 	background-color: $bg-color;
+	text-wrap: balance;
 }
 
 //==============
@@ -50,14 +51,33 @@ body {
 
 // ****************************OTHER******************************
 
-.nav-bar-active {
-	overflow: hidden;
+.horizontal-line {
+	height: 4px;
+	width: 20%;
+	margin: 0.5em 0;
+	background: $main-gradient-horizontal;
+	border-radius: 6px;
 }
 
-.horizontal-line {
-	height: 5px;
-	width: 20%;
-	margin-bottom: 0.5em;
-	background: $main-gradient;
+.vertical-line {
+	width: 4px;
+	height: 100px;
+	margin: 0.5em 0;
+	background: $main-gradient-vertical;
 	border-radius: 6px;
+}
+
+.btnDefault {
+	margin: 0.5em 0;
+	padding: 0.5em 3em;
+	border-radius: 6px;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: $main-color;
+	transition: background-color 0.3s;
+
+	&:hover {
+		background-color: $secondary-color;
+	}
 }

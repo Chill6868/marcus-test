@@ -33,6 +33,15 @@ navMobileItems.forEach((item) => {
 	});
 });
 
+const navShadow = () => {
+	if (scrollY >= 100 && innerWidth >= 992) {
+		navDesktop.classList.add("navBg");
+	} else {
+		navDesktop.classList.remove("navBg");
+	}
+};
+
+document.addEventListener("scroll", navShadow);
 burgerMenu.addEventListener("click", handleNav);
 
 handleCurrentYear();
