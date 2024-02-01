@@ -138,6 +138,13 @@
 				scale: 0.8;
 			}
 		}
+
+		&--subpage {
+			background-color: $darker-bg-color;
+			.nav__item {
+				color: $text-color;
+			}
+		}
 	}
 }
 

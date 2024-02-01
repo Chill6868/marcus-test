@@ -101,3 +101,85 @@
 		}
 	}
 }
+
+.buy {
+	&__container {
+	}
+
+	&__title,
+	&__text {
+		text-align: center;
+	}
+
+	&__img-box {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		// grid-template-rows: repeat(2, 1fr);
+	}
+
+	&__img {
+		margin: 1em;
+		position: relative;
+		grid-column: 1/-1;
+		height: 500px;
+		background-image: url("../img/home/home5.jpg");
+		background-size: cover;
+		background-position: center;
+		border-radius: 6px;
+
+		&--second {
+			background-image: url("../img/home/home4.png");
+		}
+
+		button {
+			position: absolute;
+			left: 0.5em;
+			bottom: 0.5em;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.buy {
+		&__title {
+			font-size: 3.6rem;
+		}
+
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.buy {
+		&__title {
+			font-size: 4rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.buy {
+		&__title {
+			font-size: 4.4rem;
+		}
+
+		&__img {
+			grid-column: 1/4;
+
+			&--second {
+				grid-column: 4/5;
+				background-image: url("../img/home/home3.jpg");
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.buy {
+		&__title {
+			font-size: 5rem;
+		}
+	}
+}
