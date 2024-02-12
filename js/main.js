@@ -1,6 +1,7 @@
 const navMobile = document.querySelector(".nav-mobile");
 const navDesktop = document.querySelector(".nav");
 const burgerMenu = document.querySelector(".hamburger");
+const burgerBars = document.querySelector(".hamburger-inner");
 const navMobileItems = document.querySelectorAll(".nav-mobile__item");
 const footerYear = document.querySelector(".footer__year");
 
@@ -41,7 +42,16 @@ const navShadow = () => {
 	}
 };
 
+const burgerShadow = () => {
+	if (scrollY >= 900) {
+		burgerBars.classList.add("burger-black");
+	} else {
+		burgerBars.classList.remove("burger-black");
+	}
+};
+
 document.addEventListener("scroll", navShadow);
+document.addEventListener("scroll", burgerShadow);
 burgerMenu.addEventListener("click", handleNav);
 
 handleCurrentYear();

@@ -203,6 +203,12 @@ body {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
 
+.burger-black,
+.burger-black::before,
+.burger-black::after {
+  background-color: #000 !important;
+}
+
 .nav-mobile {
   position: fixed;
   top: 0;
@@ -661,6 +667,10 @@ body {
   .home__title {
     font-size: 5rem;
   }
+}
+.buy__title {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
 }
 .buy__title, .buy__text {
   text-align: center;

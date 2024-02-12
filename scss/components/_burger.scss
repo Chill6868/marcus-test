@@ -93,3 +93,9 @@
 .hamburger--slider.is-active .hamburger-inner::after {
 	transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
+
+.burger-black,
+.burger-black::before,
+.burger-black::after {
+	background-color: #000 !important;
+}

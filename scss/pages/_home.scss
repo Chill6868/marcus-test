@@ -103,6 +103,11 @@
 }
 
 .buy {
+	&__title {
+		font-size: 3rem;
+		margin-bottom: 0.5em;
+	}
+
 	&__title,
 	&__text {
 		text-align: center;
